@@ -3,6 +3,11 @@
   functions = "out_functions"
   publish   = "out_publish"
 
+[[headers]]
+  for = "/foobar"
+  [headers.values]
+    x-foobar = "/foobar/headers"
+
 [dev]
   functions = "out_functions"
   publish   = "out_publish"
