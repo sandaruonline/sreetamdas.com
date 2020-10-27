@@ -8,6 +8,7 @@ const withMDX = require("@next/mdx")({
 });
 
 module.exports = withMDX({
+	target: "serverless",
 	pageExtensions: ["js", "jsx", "ts", "tsx", "mdx"],
 	webpack(config) {
 		config.module.rules.push({
